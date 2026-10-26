@@ -37,7 +37,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('sv.jpeg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('ex1 image.jpeg', cv2.IMREAD_GRAYSCALE)
 
 plt.imshow(img, cmap='gray')
 plt.title('Original Image')
@@ -56,7 +56,7 @@ plt.imshow(img_eq, cmap='gray')
 plt.title('Original Image')
 plt.show()
 
-img = cv2.imread('sv.jpeg', cv2.IMREAD_COLOR)
+img = cv2.imread('ex1 image.jpeg', cv2.IMREAD_COLOR)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
